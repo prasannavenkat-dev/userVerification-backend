@@ -215,7 +215,7 @@ app.post("/verification", function (req, res) {
           }
         } else {
           console.log("User Account Already verified!");
-          res.send("User Account Already verified!");
+          res.send({ message: "User Account Already verified!" });
         }
       } else {
         console.log("User Not Existed!");
